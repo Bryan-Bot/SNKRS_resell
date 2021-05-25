@@ -1,3 +1,6 @@
-<h3><%=@sneaker.name%>
+
+<h1><%=@sneaker.name%></h1>
 <p><%= image_tag @sneaker.image %></p>
 <p><%=@sneaker.price%></p>
+
+<%= link_to 'back', "/sneakers" %>

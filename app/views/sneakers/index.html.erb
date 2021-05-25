@@ -2,8 +2,10 @@
 <% @sneakers.each do |shoe| %>
     <h1><%=shoe.name%></h1>
     <%= image_tag shoe.image %>
-    <h3>$$ <%= shoe.price%></h3>
-    <button>Select</button>
+    <h3>Retail: <%= shoe.price%></h3>
+    <button><%= link_to 'select', "/sneakers/#{shoe.id}" %></button>
+    <button>follow </button>
     <hr>
 <% end %>
+
 
