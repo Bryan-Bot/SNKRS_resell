@@ -10,12 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_25_164949) do
+ActiveRecord::Schema.define(version: 2021_05_27_191809) do
 
   create_table "sneakers", force: :cascade do |t|
     t.string "image"
     t.string "name"
     t.integer "price"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "user_image"
+    t.string "email"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "password"
+    t.integer "size"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,0 +1,8 @@
+<%@users.each do |user|%>
+<p><%=user.email%></p>
+<p><%=user.first_name%></p>
+<p>Size: <%=user.size%></p>
+<hr>
+<%end%>
+
+<h4><a href="users/new">create account</a></h4>
